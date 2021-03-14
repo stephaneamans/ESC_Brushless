@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title "ESC Brushless - CAN phy"
+Date "2021-03-10"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2400 2000 0    50   Input ~ 0
+5_VCC
+Text HLabel 2400 2800 0    50   Input ~ 0
+\RS485_RE
+Text HLabel 2400 2900 0    50   Output ~ 0
+RS485_RX
+Text HLabel 7150 2900 2    50   BiDi ~ 0
+RS485-A
+Text HLabel 7150 3200 2    50   BiDi ~ 0
+RS485-B
+Wire Wire Line
+	5100 2900 7150 2900
+Wire Wire Line
+	7150 3200 5100 3200
+$Comp
+L p_Passive:C_0603 C?
+U 1 1 609345BE
+P 2900 2250
+F 0 "C?" H 3015 2296 50  0000 L CNN
+F 1 "100n" H 3015 2205 50  0000 L CNN
+F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2900 2250 50  0001 C CNN
+F 3 "" H 2900 2250 50  0001 C CNN
+	1    2900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2100 2900 2000
+$Comp
+L power:GND #PWR?
+U 1 1 609345C5
+P 2900 2450
+F 0 "#PWR?" H 2900 2200 50  0001 C CNN
+F 1 "GND" H 2900 2300 50  0000 C CNN
+F 2 "" H 2900 2450 50  0001 C CNN
+F 3 "" H 2900 2450 50  0001 C CNN
+	1    2900 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2400 2900 2450
+Wire Wire Line
+	2400 2000 2900 2000
+Connection ~ 2900 2000
+$Comp
+L power:GND #PWR?
+U 1 1 6093530A
+P 5200 3450
+F 0 "#PWR?" H 5200 3200 50  0001 C CNN
+F 1 "GND" H 5205 3277 50  0000 C CNN
+F 2 "" H 5200 3450 50  0001 C CNN
+F 3 "" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3300 5200 3450
+Text HLabel 2400 4150 0    50   UnSpc ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 60935C2E
+P 2550 4250
+F 0 "#PWR?" H 2550 4000 50  0001 C CNN
+F 1 "GND" H 2555 4077 50  0000 C CNN
+F 2 "" H 2550 4250 50  0001 C CNN
+F 3 "" H 2550 4250 50  0001 C CNN
+	1    2550 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4150 2550 4150
+Wire Wire Line
+	2550 4250 2550 4150
+$Comp
+L p_Driver_IC:MAX487CSA_ESA U?
+U 1 1 604A635F
+P 4750 3050
+F 0 "U?" H 4550 3500 50  0000 C CNN
+F 1 "MAX487CSA_ESA" H 4750 2650 50  0000 C CNN
+F 2 "p_Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4750 3050 50  0001 C CNN
+F 3 "${KI_PERSO_COMPLIB}/datasheets/p_Driver_IC/MAX488.pdf" H 4750 3050 50  0001 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3300 5200 3300
+Wire Wire Line
+	5450 2800 5450 2000
+Wire Wire Line
+	2900 2000 5450 2000
+Wire Wire Line
+	5100 2800 5450 2800
+Text HLabel 2400 3200 0    50   Input ~ 0
+RS485_DE
+Wire Wire Line
+	2400 2800 4400 2800
+Wire Wire Line
+	2400 3200 4400 3200
+Wire Wire Line
+	2400 2900 4400 2900
+Text HLabel 2400 3300 0    50   Input ~ 0
+RS485_TX
+Wire Wire Line
+	2400 3300 4400 3300
+$EndSCHEMATC
