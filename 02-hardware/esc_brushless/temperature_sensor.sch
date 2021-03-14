@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
-Title "ESC Brushless - Microcontroller"
-Date "2021-02-09"
+Sheet 7 7
+Title "ESC Brushless - Temperature sensor"
+Date "2021-03-10"
 Rev "1.0"
 Comp ""
 Comment1 ""
