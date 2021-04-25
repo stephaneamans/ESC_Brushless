@@ -1,4 +1,4 @@
-18918042461196225
+18937230824649999
 Button_Switch_Keyboard
 SW_Cherry_MX_1.00u_PCB
 Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf
@@ -82662,6 +82662,69 @@ capacitor handsolder
 0
 2
 2
+p_Package_Diode_SMD
+D_SMB_Handsoldering
+Diode SMB (DO-214AA) Handsoldering
+Diode SMB (DO-214AA) Handsoldering
+0
+2
+2
+p_Package_Inductor_SMD
+SDR0805
+Bourns SDR0805 Power Inductor
+0805
+0
+2
+2
+p_Package_Misc
+PinHeader_1x01_P5.08mm_Vertical
+Through hole straight pin header, 1x01, 5.08pitch, single row
+Through hole pin header THT 1x01 2.54mm single row
+0
+1
+1
+p_Package_Misc
+PinHeader_1x02_P2.54mm_Vertical
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+p_Package_Misc
+PinHeader_1x03_P2.54mm_Vertical
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
+p_Package_Misc
+PinHeader_1x04_P2.54mm_Vertical
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+4
+4
+p_Package_Misc
+PinHeader_1x05_P2.54mm_Vertical
+Through hole straight pin header, 1x05, 2.54mm pitch, single row
+Through hole pin header THT 1x05 2.54mm single row
+0
+5
+5
+p_Package_Misc
+TP_SMD_1.25mm
+Diode, DO-201AE series, Axial, Vertical, pin pitch=5.08mm, , length*diameter=9*5.3mm^2, , http://www.farnell.com/datasheets/529758.pdf
+Diode DO-201AE series Axial Vertical pin pitch 5.08mm  length 9mm diameter 5.3mm
+0
+1
+1
+p_Package_QFP
+LQFP-48_7x7mm_P0.5mm
+LQFP, 48 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ltc2358-16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP
+0
+48
+48
 p_Package_Resistor_SMD
 R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
 Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
@@ -82711,6 +82774,27 @@ SOIC SO
 0
 8
 8
+p_Package_SOT
+SOT-23
+SOT-23, Standard
+SOT-23
+0
+3
+3
+p_Package_SOT
+SOT-23-5
+SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOT TO_SOT_SMD
+0
+5
+5
+p_Package_SOT
+SOT-323
+SOT-323, SC-70
+SOT-323 SC-70
+0
+3
+3
 p_Package_TO_SMD
 TO-252-pin_1_3_TabPin2
 TO-252-2, tab to pin 1 https://www.wolfspeed.com/media/downloads/87/CSD01060.pdf

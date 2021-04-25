@@ -721,8 +721,6 @@ ADC_B
 Wire Wire Line
 	1700 5400 5200 5400
 Wire Wire Line
-	5200 4500 5200 5400
-Wire Wire Line
 	4400 1300 6150 1300
 $Comp
 L p_Passive:R_0603 R?
@@ -892,4 +890,25 @@ Wire Wire Line
 	10000 4400 8550 4400
 Wire Wire Line
 	8550 4400 8550 6350
+Wire Wire Line
+	5200 4300 5200 5400
+Text HLabel 10000 5550 2    50   UnSpc ~ 0
+GND_PWR
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 60A0362A
+P 9900 5650
+AR Path="/603415C7/60A0362A" Ref="#PWR?"  Part="1" 
+AR Path="/602453F4/60A0362A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 5450 50  0001 C CNN
+F 1 "GNDPWR" H 9904 5496 50  0000 C CNN
+F 2 "" H 9900 5600 50  0001 C CNN
+F 3 "" H 9900 5600 50  0001 C CNN
+	1    9900 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5550 9900 5550
+Wire Wire Line
+	9900 5550 9900 5650
 $EndSCHEMATC

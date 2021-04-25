@@ -13,12 +13,288 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3000 3800 0    50   UnSpc ~ 0
+Text HLabel 7350 2600 2    50   UnSpc ~ 0
 3.3V_MCU
-Text HLabel 3000 4050 0    50   UnSpc ~ 0
+Text HLabel 1750 4650 0    50   UnSpc ~ 0
 V_PWR
-Text HLabel 2950 3300 0    50   Output ~ 0
+Text HLabel 7350 4650 2    50   Output ~ 0
 ADC_PVDD
-Text HLabel 3000 3600 0    50   UnSpc ~ 0
+Text HLabel 1750 2600 0    50   UnSpc ~ 0
 5_VCC
+$Comp
+L p_Power_Supply:LDLN025M15R U?
+U 1 1 60A4D779
+P 4450 2800
+F 0 "U?" H 4450 3265 50  0000 C CNN
+F 1 "LDLN025M15R" H 4450 3174 50  0000 C CNN
+F 2 "p_Package_SOT:SOT-23-5" H 4400 2450 50  0001 C CNN
+F 3 "${KI_PERSO_COMPLIB}/datasheets/p_Power_Supply/LDLN025.pdf" H 4450 2800 50  0001 C CNN
+	1    4450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L p_Passive:R_0603 R?
+U 1 1 60A4ED5D
+P 3300 4650
+F 0 "R?" V 3093 4650 50  0000 C CNN
+F 1 "R_0603" V 3184 4650 50  0000 C CNN
+F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3300 4650 50  0001 C CNN
+F 3 "" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L p_Passive:R_0603 R?
+U 1 1 60A4F230
+P 3650 4950
+F 0 "R?" H 3580 4904 50  0000 R CNN
+F 1 "R_0603" H 3580 4995 50  0000 R CNN
+F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3650 4950 50  0001 C CNN
+F 3 "" H 3650 4950 50  0001 C CNN
+	1    3650 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 4650 3650 4650
+Wire Wire Line
+	3650 4800 3650 4650
+$Comp
+L p_Passive:C_0603 C?
+U 1 1 60A5252E
+P 6400 4900
+F 0 "C?" H 6515 4946 50  0000 L CNN
+F 1 "C_0603" H 6515 4855 50  0000 L CNN
+F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6400 4900 50  0001 C CNN
+F 3 "" H 6400 4900 50  0001 C CNN
+	1    6400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L p_Diode:BAT54SW D?
+U 1 1 60817D5A
+P 5450 4650
+F 0 "D?" H 5578 4696 50  0000 L CNN
+F 1 "BAT54SW" H 5578 4605 50  0000 L CNN
+F 2 "p_Package_SOT:SOT-323" V 5450 4750 50  0001 C CNN
+F 3 "${KI_PERSO_COMPLIB}/datasheets/p_Diode/BAT54SWT.pdf" V 5450 4750 50  0001 C CNN
+	1    5450 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 4650
+Wire Wire Line
+	5250 4650 6400 4650
+Wire Wire Line
+	3650 4650 5250 4650
+Connection ~ 3650 4650
+Wire Wire Line
+	4800 2600 5150 2600
+Wire Wire Line
+	5450 2600 5450 4300
+Connection ~ 5450 2600
+Wire Wire Line
+	5450 2600 7350 2600
+$Comp
+L power:GND #PWR?
+U 1 1 6086150E
+P 6400 5150
+F 0 "#PWR?" H 6400 4900 50  0001 C CNN
+F 1 "GND" H 6405 4977 50  0000 C CNN
+F 2 "" H 6400 5150 50  0001 C CNN
+F 3 "" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4750 6400 4650
+Connection ~ 6400 4650
+Wire Wire Line
+	6400 4650 7350 4650
+$Comp
+L power:GND #PWR?
+U 1 1 6086232A
+P 5450 5150
+F 0 "#PWR?" H 5450 4900 50  0001 C CNN
+F 1 "GND" H 5455 4977 50  0000 C CNN
+F 2 "" H 5450 5150 50  0001 C CNN
+F 3 "" H 5450 5150 50  0001 C CNN
+	1    5450 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608627AC
+P 3650 5150
+F 0 "#PWR?" H 3650 4900 50  0001 C CNN
+F 1 "GND" H 3655 4977 50  0000 C CNN
+F 2 "" H 3650 5150 50  0001 C CNN
+F 3 "" H 3650 5150 50  0001 C CNN
+	1    3650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5050 6400 5150
+Wire Wire Line
+	5450 5000 5450 5150
+Wire Wire Line
+	3650 5100 3650 5150
+$Comp
+L power:GND #PWR?
+U 1 1 60864AB5
+P 4900 3000
+F 0 "#PWR?" H 4900 2750 50  0001 C CNN
+F 1 "GND" H 4905 2827 50  0000 C CNN
+F 2 "" H 4900 3000 50  0001 C CNN
+F 3 "" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2900 4900 2900
+Wire Wire Line
+	4900 2900 4900 3000
+$Comp
+L p_Passive:C_0603 C?
+U 1 1 60865F99
+P 5150 2800
+F 0 "C?" H 5265 2846 50  0000 L CNN
+F 1 "1u" H 5265 2755 50  0000 L CNN
+F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5150 2800 50  0001 C CNN
+F 3 "" H 5150 2800 50  0001 C CNN
+	1    5150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2650 5150 2600
+Connection ~ 5150 2600
+Wire Wire Line
+	5150 2600 5450 2600
+$Comp
+L power:GND #PWR?
+U 1 1 60866D22
+P 5150 3000
+F 0 "#PWR?" H 5150 2750 50  0001 C CNN
+F 1 "GND" H 5155 2827 50  0000 C CNN
+F 2 "" H 5150 3000 50  0001 C CNN
+F 3 "" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2950 5150 3000
+Wire Wire Line
+	1750 2600 2950 2600
+Wire Wire Line
+	1750 4650 3150 4650
+$Comp
+L p_Passive:C_0603 C?
+U 1 1 6086C6A8
+P 3550 2800
+F 0 "C?" H 3665 2846 50  0000 L CNN
+F 1 "1u" H 3665 2755 50  0000 L CNN
+F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3550 2800 50  0001 C CNN
+F 3 "" H 3550 2800 50  0001 C CNN
+	1    3550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6086C6AF
+P 3550 3000
+F 0 "#PWR?" H 3550 2750 50  0001 C CNN
+F 1 "GND" H 3555 2827 50  0000 C CNN
+F 2 "" H 3550 3000 50  0001 C CNN
+F 3 "" H 3550 3000 50  0001 C CNN
+	1    3550 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2950 3550 3000
+Wire Wire Line
+	3550 2650 3550 2600
+Connection ~ 3550 2600
+Wire Wire Line
+	3550 2600 4100 2600
+$Comp
+L p_Passive:R_0603 R?
+U 1 1 6086DFE6
+P 2950 3200
+F 0 "R?" V 2743 3200 50  0000 C CNN
+F 1 "R_0603" V 2834 3200 50  0000 C CNN
+F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2950 3200 50  0001 C CNN
+F 3 "" H 2950 3200 50  0001 C CNN
+	1    2950 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 3050 2950 2600
+Connection ~ 2950 2600
+Wire Wire Line
+	2950 2600 3550 2600
+Wire Wire Line
+	4100 2900 3950 2900
+Wire Wire Line
+	3950 2900 3950 3450
+Wire Wire Line
+	3950 3450 2950 3450
+$Comp
+L p_Passive:C_0603 C?
+U 1 1 60871FF8
+P 2950 3700
+F 0 "C?" H 3065 3746 50  0000 L CNN
+F 1 "C_0603" H 3065 3655 50  0000 L CNN
+F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2950 3700 50  0001 C CNN
+F 3 "" H 2950 3700 50  0001 C CNN
+	1    2950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60872645
+P 2950 3950
+F 0 "#PWR?" H 2950 3700 50  0001 C CNN
+F 1 "GND" H 2955 3777 50  0000 C CNN
+F 2 "" H 2950 3950 50  0001 C CNN
+F 3 "" H 2950 3950 50  0001 C CNN
+	1    2950 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3350 2950 3450
+Connection ~ 2950 3450
+Wire Wire Line
+	2950 3450 2950 3550
+$Comp
+L p_Transistor_FET:2SK1829 Q?
+U 1 1 608D9D42
+P 2300 3700
+F 0 "Q?" H 2384 3746 50  0000 L CNN
+F 1 "2SK1829" H 2384 3655 50  0000 L CNN
+F 2 "p_Package_SOT:SOT-23" H 2300 3700 50  0001 C CNN
+F 3 "${KI_PERSO_COMPLIB}/datasheets/p_Transistor_FET/2SK1829.pdf" H 2300 3700 50  0001 C CNN
+	1    2300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3450 2300 3450
+$Comp
+L power:GND #PWR?
+U 1 1 608E0944
+P 2300 3950
+F 0 "#PWR?" H 2300 3700 50  0001 C CNN
+F 1 "GND" H 2305 3777 50  0000 C CNN
+F 2 "" H 2300 3950 50  0001 C CNN
+F 3 "" H 2300 3950 50  0001 C CNN
+	1    2300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3500 2300 3450
+Wire Wire Line
+	2950 3850 2950 3950
+Wire Wire Line
+	2300 3900 2300 3950
+Text HLabel 1750 3700 0    50   Input ~ 0
+\MCU_RST
+Wire Wire Line
+	1750 3700 2000 3700
 $EndSCHEMATC
