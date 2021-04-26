@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -297,4 +297,21 @@ Text HLabel 1750 3700 0    50   Input ~ 0
 \MCU_RST
 Wire Wire Line
 	1750 3700 2000 3700
+Text HLabel 7350 5050 2    50   UnSpc ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 60BED520
+P 7250 5150
+F 0 "#PWR?" H 7250 4900 50  0001 C CNN
+F 1 "GND" H 7255 4977 50  0000 C CNN
+F 2 "" H 7250 5150 50  0001 C CNN
+F 3 "" H 7250 5150 50  0001 C CNN
+	1    7250 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5050 7250 5050
+Wire Wire Line
+	7250 5050 7250 5150
 $EndSCHEMATC

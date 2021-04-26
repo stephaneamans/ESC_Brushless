@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title "ESC Brushless"
 Date "2021-02-09"
 Rev "1.0"
@@ -143,12 +143,7 @@ F3 "V_PWR" U L 2350 2100 50
 F4 "ADC_PVDD" O R 3400 2300 50 
 F5 "5_VCC" U L 2350 2300 50 
 F6 "\\MCU_RST" I R 3400 2500 50 
-$EndSheet
-$Sheet
-S 4950 6300 1750 1000
-U 60926813
-F0 "temperature_sensor" 50
-F1 "temperature_sensor.sch" 50
+F7 "GND" U L 2350 2500 50 
 $EndSheet
 $Sheet
 S 1650 5900 1250 1100
@@ -253,7 +248,7 @@ $Comp
 L p_Misc:test_point TP?
 U 1 1 6085C419
 P 3050 3200
-F 0 "TP?" H 2800 3250 50  0000 C CNN
+F 0 "TP?" H 2800 3200 50  0000 C CNN
 F 1 "test_point" H 3037 3334 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 3050 3000 50  0001 C CNN
 F 3 "" H 3050 3200 50  0001 C CNN
@@ -264,7 +259,7 @@ $Comp
 L p_Misc:test_point TP?
 U 1 1 6085D004
 P 3050 3300
-F 0 "TP?" H 2800 3350 50  0000 C CNN
+F 0 "TP?" H 2800 3300 50  0000 C CNN
 F 1 "test_point" H 3037 3434 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 3050 3100 50  0001 C CNN
 F 3 "" H 3050 3300 50  0001 C CNN
@@ -275,7 +270,7 @@ $Comp
 L p_Misc:test_point TP?
 U 1 1 6085D0A4
 P 3050 3550
-F 0 "TP?" H 2800 3600 50  0000 C CNN
+F 0 "TP?" H 2800 3550 50  0000 C CNN
 F 1 "test_point" H 3037 3684 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 3050 3350 50  0001 C CNN
 F 3 "" H 3050 3550 50  0001 C CNN
@@ -286,7 +281,7 @@ $Comp
 L p_Misc:test_point TP?
 U 1 1 6085D196
 P 3050 3650
-F 0 "TP?" H 2800 3700 50  0000 C CNN
+F 0 "TP?" H 2800 3650 50  0000 C CNN
 F 1 "test_point" H 3037 3784 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 3050 3450 50  0001 C CNN
 F 3 "" H 3050 3650 50  0001 C CNN
@@ -686,4 +681,133 @@ Wire Wire Line
 	3550 1750 3550 2100
 Wire Wire Line
 	3400 2500 3700 2500
+$Comp
+L p_Diode:LED_G D?
+U 1 1 60B76269
+P 3100 4150
+F 0 "D?" H 3100 4300 50  0000 C CNN
+F 1 "LED_G" H 3100 4050 50  0000 C CNN
+F 2 "p_Package_Diode_SMD:LED_0603_1608Metric" H 3200 4050 50  0001 C CNN
+F 3 "" H 3200 4050 50  0001 C CNN
+	1    3100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L p_Passive:R_0603 R?
+U 1 1 60B78CC7
+P 2600 4150
+F 0 "R?" V 2500 4050 50  0000 C CNN
+F 1 "R_0603" V 2500 4300 50  0000 C CNN
+F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2600 4150 50  0001 C CNN
+F 3 "" H 2600 4150 50  0001 C CNN
+	1    2600 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 4150 2850 4150
+Wire Wire Line
+	2450 4150 2050 4150
+Text Label 2050 4150 0    50   ~ 0
+3.3V_MCU
+Text Label 3550 1750 0    50   ~ 0
+3.3V_MCU
+$Comp
+L p_Passive:R_0603 R?
+U 1 1 60B8810F
+P 2600 4400
+F 0 "R?" V 2500 4300 50  0000 C CNN
+F 1 "R_0603" V 2500 4550 50  0000 C CNN
+F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2600 4400 50  0001 C CNN
+F 3 "" H 2600 4400 50  0001 C CNN
+	1    2600 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 4400 2050 4400
+Text Label 2050 4400 0    50   ~ 0
+3.3V_MCU
+$Comp
+L p_Passive:R_0603 R?
+U 1 1 60B93F2C
+P 2600 4700
+F 0 "R?" V 2500 4600 50  0000 C CNN
+F 1 "DNP" V 2500 4800 50  0000 C CNN
+F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2600 4700 50  0001 C CNN
+F 3 "" H 2600 4700 50  0001 C CNN
+	1    2600 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 4700 2800 4700
+$Comp
+L power:GND #PWR?
+U 1 1 60B9925A
+P 2350 4750
+F 0 "#PWR?" H 2350 4500 50  0001 C CNN
+F 1 "GND" H 2355 4577 50  0000 C CNN
+F 2 "" H 2350 4750 50  0001 C CNN
+F 3 "" H 2350 4750 50  0001 C CNN
+	1    2350 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4700 2350 4700
+Wire Wire Line
+	2350 4700 2350 4750
+Wire Wire Line
+	2800 4700 2800 4400
+Wire Wire Line
+	3350 4150 3700 4150
+Wire Wire Line
+	2750 4400 2800 4400
+Connection ~ 2800 4400
+Wire Wire Line
+	2800 4400 3700 4400
+Wire Notes Line width 12
+	2850 5250 2850 4500
+Text Notes 2100 5100 0    50   ~ 0
+Enter test mode\n(short)
+Wire Notes Line width 12
+	2050 4500 2050 5250
+Text Notes 2100 5200 0    50   ~ 0
+if implemented
+Wire Notes Line width 12
+	2050 5250 2850 5250
+Wire Notes Line width 12
+	2050 4500 2850 4500
+$Comp
+L power:GND #PWR?
+U 1 1 60BEFFEA
+P 2200 2600
+F 0 "#PWR?" H 2200 2350 50  0001 C CNN
+F 1 "GND" H 2205 2427 50  0000 C CNN
+F 2 "" H 2200 2600 50  0001 C CNN
+F 3 "" H 2200 2600 50  0001 C CNN
+	1    2200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2500 2200 2500
+Wire Wire Line
+	2200 2500 2200 2600
+Wire Notes Line width 12
+	3200 3400 2150 3400
+Text Notes 2200 3300 0    50   ~ 0
+UART debug\noption
+Wire Notes Line width 12
+	3200 3450 2150 3450
+Wire Notes Line width 12
+	2150 3450 2150 3750
+Wire Notes Line width 12
+	2150 3750 3200 3750
+Wire Notes Line width 12
+	3200 3750 3200 3450
+Wire Notes Line width 12
+	3200 3400 3200 3100
+Wire Notes Line width 12
+	3200 3100 2150 3100
+Wire Notes Line width 12
+	2150 3100 2150 3400
+Text Notes 2200 3700 0    50   ~ 0
+I2C option \nfor specific\ndesigns
 $EndSCHEMATC
