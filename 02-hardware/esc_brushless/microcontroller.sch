@@ -56,7 +56,7 @@ SW_CLK
 Text HLabel 2150 3850 0    50   Input ~ 0
 SW_DIO
 Text HLabel 2150 1800 0    50   Input ~ 0
-TEMP_SENSOR
+TEMP_SENSOR1
 Text HLabel 2150 1900 0    50   Input ~ 0
 ADC_PVDD
 Text HLabel 9900 4450 2    50   Output ~ 0
@@ -74,10 +74,10 @@ RS485_DE
 Text HLabel 2150 1350 0    50   Output ~ 0
 UART_TX
 $Comp
-L p_MCU:STM32G030_C8 U?
+L p_MCU:STM32G030_C8 U2
 U 1 1 607AAEF6
 P 6150 3600
-F 0 "U?" H 6150 5315 50  0000 C CNN
+F 0 "U2" H 6150 5315 50  0000 C CNN
 F 1 "STM32G030_C8" H 6150 5224 50  0000 C CNN
 F 2 "p_Package_QFP:LQFP-48_7x7mm_P0.5mm" H 6250 1950 50  0001 C CNN
 F 3 "" H 6100 2800 50  0001 C CNN
@@ -92,10 +92,10 @@ Connection ~ 5300 2150
 Wire Wire Line
 	5300 2150 5450 2150
 $Comp
-L p_Passive:C_0603 C?
+L p_Passive:C_0603 C27
 U 1 1 607AE35E
 P 8250 1300
-F 0 "C?" H 8365 1346 50  0000 L CNN
+F 0 "C27" H 8365 1346 50  0000 L CNN
 F 1 "2.2u" H 8365 1255 50  0000 L CNN
 F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8250 1300 50  0001 C CNN
 F 3 "" H 8250 1300 50  0001 C CNN
@@ -103,10 +103,10 @@ F 3 "" H 8250 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L p_Passive:C_0603 C?
+L p_Passive:C_0603 C28
 U 1 1 607AE9BE
 P 8750 1300
-F 0 "C?" H 8865 1346 50  0000 L CNN
+F 0 "C28" H 8865 1346 50  0000 L CNN
 F 1 "2.2u" H 8865 1255 50  0000 L CNN
 F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8750 1300 50  0001 C CNN
 F 3 "" H 8750 1300 50  0001 C CNN
@@ -114,10 +114,10 @@ F 3 "" H 8750 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L p_Passive:C_0603 C?
+L p_Passive:C_0603 C29
 U 1 1 607AECD1
 P 9250 1300
-F 0 "C?" H 9365 1346 50  0000 L CNN
+F 0 "C29" H 9365 1346 50  0000 L CNN
 F 1 "2.2u" H 9365 1255 50  0000 L CNN
 F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9250 1300 50  0001 C CNN
 F 3 "" H 9250 1300 50  0001 C CNN
@@ -149,10 +149,10 @@ Wire Wire Line
 Wire Wire Line
 	9250 1050 8750 1050
 $Comp
-L power:GND #PWR?
+L power:GND #PWR044
 U 1 1 607C423E
 P 8750 1600
-F 0 "#PWR?" H 8750 1350 50  0001 C CNN
+F 0 "#PWR044" H 8750 1350 50  0001 C CNN
 F 1 "GND" H 8755 1427 50  0000 C CNN
 F 2 "" H 8750 1600 50  0001 C CNN
 F 3 "" H 8750 1600 50  0001 C CNN
@@ -160,10 +160,10 @@ F 3 "" H 8750 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR043
 U 1 1 607C5BA3
 P 5350 5200
-F 0 "#PWR?" H 5350 4950 50  0001 C CNN
+F 0 "#PWR043" H 5350 4950 50  0001 C CNN
 F 1 "GND" H 5355 5027 50  0000 C CNN
 F 2 "" H 5350 5200 50  0001 C CNN
 F 3 "" H 5350 5200 50  0001 C CNN
@@ -191,10 +191,10 @@ I2C_SDA
 Text Label 7500 3350 0    50   ~ 0
 I2C_SCL
 $Comp
-L p_Passive:R_0603 R?
+L p_Passive:R_0603 R36
 U 1 1 607D2E69
 P 2550 6950
-F 0 "R?" H 2638 6996 50  0000 L CNN
+F 0 "R36" H 2638 6996 50  0000 L CNN
 F 1 "4.7k" H 2638 6905 50  0000 L CNN
 F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2550 6950 50  0001 C CNN
 F 3 "" H 2550 6950 50  0001 C CNN
@@ -202,10 +202,10 @@ F 3 "" H 2550 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L p_Passive:R_0603 R?
+L p_Passive:R_0603 R39
 U 1 1 607D3692
 P 2950 6950
-F 0 "R?" H 3038 6996 50  0000 L CNN
+F 0 "R39" H 3038 6996 50  0000 L CNN
 F 1 "4.7k" H 3038 6905 50  0000 L CNN
 F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2950 6950 50  0001 C CNN
 F 3 "" H 2950 6950 50  0001 C CNN
@@ -494,7 +494,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 4650 5450 4650
 Text Label 4550 4250 0    50   ~ 0
-EB_GATE
+EN_GATE
 Text Label 4550 4350 0    50   ~ 0
 DC_CAL
 Text Label 4550 4450 0    50   ~ 0
@@ -504,10 +504,10 @@ Text Label 4550 4550 0    50   ~ 0
 Text Label 4550 4650 0    50   ~ 0
 RS485_DE
 $Comp
-L p_Transistor_bipolar:BC848B Q?
+L p_Transistor_bipolar:BC848B Q7
 U 1 1 60949F59
 P 3500 5500
-F 0 "Q?" H 3591 5546 50  0000 L CNN
+F 0 "Q7" H 3591 5546 50  0000 L CNN
 F 1 "BC848B" H 3591 5455 50  0000 L CNN
 F 2 "p_Package_SOT:SOT-23" H 3500 5200 50  0001 C CNN
 F 3 "${KI_PERSO_COMPLIB}/datasheets/p_Transistor_bipolar/BC848.pdf" H 3500 5200 50  0001 C CNN
@@ -515,10 +515,10 @@ F 3 "${KI_PERSO_COMPLIB}/datasheets/p_Transistor_bipolar/BC848.pdf" H 3500 5200 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR042
 U 1 1 6094AB0F
 P 3350 6100
-F 0 "#PWR?" H 3350 5850 50  0001 C CNN
+F 0 "#PWR042" H 3350 5850 50  0001 C CNN
 F 1 "GND" H 3355 5927 50  0000 C CNN
 F 2 "" H 3350 6100 50  0001 C CNN
 F 3 "" H 3350 6100 50  0001 C CNN
@@ -528,10 +528,10 @@ $EndComp
 Text Label 3000 4600 0    50   ~ 0
 3.3V_MCU
 $Comp
-L p_Passive:R_0603 R?
+L p_Passive:R_0603 R38
 U 1 1 60964833
 P 2900 5500
-F 0 "R?" V 2800 5500 50  0000 C CNN
+F 0 "R38" V 2800 5500 50  0000 C CNN
 F 1 "R_0603" V 3000 5500 50  0000 C CNN
 F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2900 5500 50  0001 C CNN
 F 3 "" H 2900 5500 50  0001 C CNN
@@ -539,10 +539,10 @@ F 3 "" H 2900 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L p_Passive:R_0603 R?
+L p_Passive:R_0603 R40
 U 1 1 6096D73F
 P 3150 5850
-F 0 "R?" V 3050 5850 50  0000 C CNN
+F 0 "R40" V 3050 5850 50  0000 C CNN
 F 1 "R_0603" V 3250 5850 50  0000 C CNN
 F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3150 5850 50  0001 C CNN
 F 3 "" H 3150 5850 50  0001 C CNN
@@ -550,10 +550,10 @@ F 3 "" H 3150 5850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L p_Passive:R_0603 R?
+L p_Passive:R_0603 R41
 U 1 1 6098DB94
 P 3500 4800
-F 0 "R?" V 3400 4800 50  0000 C CNN
+F 0 "R41" V 3400 4800 50  0000 C CNN
 F 1 "R_0603" V 3600 4800 50  0000 C CNN
 F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3500 4800 50  0001 C CNN
 F 3 "" H 3500 4800 50  0001 C CNN
@@ -588,10 +588,10 @@ PWM_IN
 Text Label 3750 5000 0    50   ~ 0
 PWM_IN
 $Comp
-L p_Passive:R_0603 R?
+L p_Passive:R_0603 R37
 U 1 1 6087455B
 P 2650 5000
-F 0 "R?" V 2550 5000 50  0000 C CNN
+F 0 "R37" V 2550 5000 50  0000 C CNN
 F 1 "DNP" V 2750 5000 50  0000 C CNN
 F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2650 5000 50  0001 C CNN
 F 3 "" H 2650 5000 50  0001 C CNN
@@ -622,10 +622,10 @@ Wire Wire Line
 Text HLabel 9900 5200 2    50   UnSpc ~ 0
 GND
 $Comp
-L power:GND #PWR?
+L power:GND #PWR045
 U 1 1 608C887C
 P 9750 5300
-F 0 "#PWR?" H 9750 5050 50  0001 C CNN
+F 0 "#PWR045" H 9750 5050 50  0001 C CNN
 F 1 "GND" H 9755 5127 50  0000 C CNN
 F 2 "" H 9750 5300 50  0001 C CNN
 F 3 "" H 9750 5300 50  0001 C CNN
@@ -637,10 +637,10 @@ Wire Wire Line
 Wire Wire Line
 	9750 5200 9750 5300
 $Comp
-L p_Misc:test_point TP?
+L p_Misc:test_point TP9
 U 1 1 608CEC2C
 P 7200 4750
-F 0 "TP?" H 7031 4755 50  0000 R CNN
+F 0 "TP9" H 7031 4755 50  0000 R CNN
 F 1 "test_point" H 7187 4884 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 4550 50  0001 C CNN
 F 3 "" H 7200 4750 50  0001 C CNN
@@ -648,10 +648,10 @@ F 3 "" H 7200 4750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L p_Misc:test_point TP?
+L p_Misc:test_point TP10
 U 1 1 608DA935
 P 7200 4850
-F 0 "TP?" H 7031 4855 50  0000 R CNN
+F 0 "TP10" H 7031 4855 50  0000 R CNN
 F 1 "test_point" H 7187 4984 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 4650 50  0001 C CNN
 F 3 "" H 7200 4850 50  0001 C CNN
@@ -663,10 +663,10 @@ Wire Wire Line
 Wire Wire Line
 	6850 4850 7100 4850
 $Comp
-L p_Misc:test_point TP?
+L p_Misc:test_point TP6
 U 1 1 608E544E
 P 5100 4050
-F 0 "TP?" H 4900 4050 50  0000 C CNN
+F 0 "TP6" H 4900 4050 50  0000 C CNN
 F 1 "test_point" H 5087 4184 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 5100 3850 50  0001 C CNN
 F 3 "" H 5100 4050 50  0001 C CNN
@@ -678,10 +678,10 @@ Wire Wire Line
 Wire Wire Line
 	5200 4050 5450 4050
 $Comp
-L p_Misc:test_point TP?
+L p_Misc:test_point TP5
 U 1 1 609117C2
 P 5100 3750
-F 0 "TP?" H 4900 3750 50  0000 C CNN
+F 0 "TP5" H 4900 3750 50  0000 C CNN
 F 1 "test_point" H 5087 3884 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 5100 3550 50  0001 C CNN
 F 3 "" H 5100 3750 50  0001 C CNN
@@ -691,21 +691,10 @@ $EndComp
 Wire Wire Line
 	5200 3750 5450 3750
 $Comp
-L p_Misc:test_point TP?
-U 1 1 60917464
-P 7200 3750
-F 0 "TP?" H 7031 3755 50  0000 R CNN
-F 1 "test_point" H 7187 3884 50  0001 C CNN
-F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 3550 50  0001 C CNN
-F 3 "" H 7200 3750 50  0001 C CNN
-	1    7200 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L p_Misc:test_point TP?
+L p_Misc:test_point TP8
 U 1 1 60917A46
 P 7200 3050
-F 0 "TP?" H 7031 3055 50  0000 R CNN
+F 0 "TP8" H 7031 3055 50  0000 R CNN
 F 1 "test_point" H 7187 3184 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 2850 50  0001 C CNN
 F 3 "" H 7200 3050 50  0001 C CNN
@@ -713,10 +702,10 @@ F 3 "" H 7200 3050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L p_Misc:test_point TP?
+L p_Misc:test_point TP7
 U 1 1 60917D91
 P 7200 2950
-F 0 "TP?" H 7031 2955 50  0000 R CNN
+F 0 "TP7" H 7031 2955 50  0000 R CNN
 F 1 "test_point" H 7187 3084 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 2750 50  0001 C CNN
 F 3 "" H 7200 2950 50  0001 C CNN
@@ -727,7 +716,15 @@ Wire Wire Line
 	6850 3050 7100 3050
 Wire Wire Line
 	6850 2950 7100 2950
-Wire Wire Line
-	6850 3750 7100 3750
 NoConn ~ 5450 4850
+Wire Wire Line
+	6850 3750 7500 3750
+Text Label 7500 3750 0    50   ~ 0
+ADC_IN16
+Text HLabel 2150 1700 0    50   Input ~ 0
+TEMP_SENSOR2
+Wire Wire Line
+	2150 1700 3300 1700
+Text Label 3300 1700 0    50   ~ 0
+ADC_IN16
 $EndSCHEMATC
