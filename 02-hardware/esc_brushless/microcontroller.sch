@@ -47,10 +47,6 @@ Text HLabel 2150 2000 0    50   Input ~ 0
 ADC_A
 Text HLabel 2150 1450 0    50   Input ~ 0
 UART_RX
-Text HLabel 2150 7250 0    50   BiDi ~ 0
-I2C_SDA
-Text HLabel 2150 7350 0    50   Input ~ 0
-I2C_SCL
 Text HLabel 2150 3950 0    50   Input ~ 0
 SW_CLK
 Text HLabel 2150 3850 0    50   Input ~ 0
@@ -61,12 +57,6 @@ Text HLabel 2150 1900 0    50   Input ~ 0
 ADC_PVDD
 Text HLabel 9900 4450 2    50   Output ~ 0
 LED
-Text HLabel 2150 3500 0    50   Input ~ 0
-\TEST
-Text HLabel 2150 2750 0    50   Output ~ 0
-UART_DEBUG_TX
-Text HLabel 2150 2850 0    50   Input ~ 0
-UART_DEBUG_RX
 Text HLabel 9900 4850 2    50   Output ~ 0
 \RS485_RE
 Text HLabel 9900 4950 2    50   Output ~ 0
@@ -178,70 +168,12 @@ Text Label 8250 1050 0    50   ~ 0
 3.3V_MCU
 Text Label 4900 900  0    50   ~ 0
 3.3V_MCU
-Text Label 3300 7250 0    50   ~ 0
-I2C_SDA
-Text Label 3300 7350 0    50   ~ 0
-I2C_SCL
-Wire Wire Line
-	6850 3350 7500 3350
-Wire Wire Line
-	6850 3450 7500 3450
-Text Label 7500 3450 0    50   ~ 0
-I2C_SDA
-Text Label 7500 3350 0    50   ~ 0
-I2C_SCL
-$Comp
-L p_Passive:R_0603 R36
-U 1 1 607D2E69
-P 2550 6950
-F 0 "R36" H 2638 6996 50  0000 L CNN
-F 1 "4.7k" H 2638 6905 50  0000 L CNN
-F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2550 6950 50  0001 C CNN
-F 3 "" H 2550 6950 50  0001 C CNN
-	1    2550 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L p_Passive:R_0603 R39
-U 1 1 607D3692
-P 2950 6950
-F 0 "R39" H 3038 6996 50  0000 L CNN
-F 1 "4.7k" H 3038 6905 50  0000 L CNN
-F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2950 6950 50  0001 C CNN
-F 3 "" H 2950 6950 50  0001 C CNN
-	1    2950 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 6800 2950 6700
-Wire Wire Line
-	2950 6700 2550 6700
-Wire Wire Line
-	2550 6700 2550 6800
-Text Label 2550 6700 0    50   ~ 0
-3.3V_MCU
-Wire Wire Line
-	2150 7250 2550 7250
-Wire Wire Line
-	2150 7350 2950 7350
-Wire Wire Line
-	2550 7100 2550 7250
-Connection ~ 2550 7250
-Wire Wire Line
-	2550 7250 3300 7250
-Wire Wire Line
-	2950 7100 2950 7350
-Connection ~ 2950 7350
-Wire Wire Line
-	2950 7350 3300 7350
 Wire Wire Line
 	6850 3150 7500 3150
 Wire Wire Line
 	6850 3250 7500 3250
 Text Label 7500 3250 0    50   ~ 0
 UART1_RX
-Text Label 7500 3150 0    50   ~ 0
-UART1_TX
 Wire Wire Line
 	2150 1450 3300 1450
 Wire Wire Line
@@ -291,14 +223,6 @@ Wire Wire Line
 Connection ~ 5300 2250
 Text Label 4550 2950 0    50   ~ 0
 SPI_MISO
-Text Label 4550 2750 0    50   ~ 0
-UART2_TX
-Text Label 4550 2850 0    50   ~ 0
-UART2_RX
-Wire Wire Line
-	2150 2750 5450 2750
-Wire Wire Line
-	2150 2850 5450 2850
 Wire Wire Line
 	6850 3850 7500 3850
 Text Label 7500 3850 0    50   ~ 0
@@ -416,10 +340,6 @@ Wire Wire Line
 Text Label 4800 2150 0    50   ~ 0
 ADC_REF
 Wire Wire Line
-	2150 3500 3300 3500
-Text Label 3300 3500 0    50   ~ 0
-\TEST
-Wire Wire Line
 	2150 3400 3300 3400
 Wire Wire Line
 	2150 3300 3300 3300
@@ -443,10 +363,6 @@ Wire Wire Line
 	6850 4450 7500 4450
 Text Label 7500 4450 0    50   ~ 0
 \FLT
-Wire Wire Line
-	6850 4550 7500 4550
-Text Label 7500 4550 0    50   ~ 0
-\TEST
 Text Label 9000 4250 0    50   ~ 0
 EN_GATE
 Text Label 9000 4350 0    50   ~ 0
@@ -468,7 +384,7 @@ Wire Wire Line
 Wire Wire Line
 	9000 4950 9900 4950
 Text Label 4550 3650 0    50   ~ 0
-PWM_IN
+PWM
 Wire Wire Line
 	4550 3650 5450 3650
 Wire Wire Line
@@ -586,7 +502,7 @@ Connection ~ 3150 5500
 Text HLabel 2150 5500 0    50   Input ~ 0
 PWM_IN
 Text Label 3750 5000 0    50   ~ 0
-PWM_IN
+PWM
 $Comp
 L p_Passive:R_0603 R37
 U 1 1 6087455B
@@ -637,36 +553,10 @@ Wire Wire Line
 Wire Wire Line
 	9750 5200 9750 5300
 $Comp
-L p_Misc:test_point TP9
-U 1 1 608CEC2C
-P 7200 4750
-F 0 "TP9" H 7031 4755 50  0000 R CNN
-F 1 "test_point" H 7187 4884 50  0001 C CNN
-F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 4550 50  0001 C CNN
-F 3 "" H 7200 4750 50  0001 C CNN
-	1    7200 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L p_Misc:test_point TP10
-U 1 1 608DA935
-P 7200 4850
-F 0 "TP10" H 7031 4855 50  0000 R CNN
-F 1 "test_point" H 7187 4984 50  0001 C CNN
-F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 4650 50  0001 C CNN
-F 3 "" H 7200 4850 50  0001 C CNN
-	1    7200 4850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6850 4750 7100 4750
-Wire Wire Line
-	6850 4850 7100 4850
-$Comp
-L p_Misc:test_point TP6
+L p_Misc:test_point TP2
 U 1 1 608E544E
 P 5100 4050
-F 0 "TP6" H 4900 4050 50  0000 C CNN
+F 0 "TP2" H 4900 4050 50  0000 C CNN
 F 1 "test_point" H 5087 4184 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 5100 3850 50  0001 C CNN
 F 3 "" H 5100 4050 50  0001 C CNN
@@ -678,10 +568,10 @@ Wire Wire Line
 Wire Wire Line
 	5200 4050 5450 4050
 $Comp
-L p_Misc:test_point TP5
+L p_Misc:test_point TP1
 U 1 1 609117C2
 P 5100 3750
-F 0 "TP5" H 4900 3750 50  0000 C CNN
+F 0 "TP1" H 4900 3750 50  0000 C CNN
 F 1 "test_point" H 5087 3884 50  0001 C CNN
 F 2 "p_Package_Misc:TP_SMD_1.25mm" H 5100 3550 50  0001 C CNN
 F 3 "" H 5100 3750 50  0001 C CNN
@@ -690,32 +580,6 @@ F 3 "" H 5100 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 3750 5450 3750
-$Comp
-L p_Misc:test_point TP8
-U 1 1 60917A46
-P 7200 3050
-F 0 "TP8" H 7031 3055 50  0000 R CNN
-F 1 "test_point" H 7187 3184 50  0001 C CNN
-F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 2850 50  0001 C CNN
-F 3 "" H 7200 3050 50  0001 C CNN
-	1    7200 3050
-	-1   0    0    1   
-$EndComp
-$Comp
-L p_Misc:test_point TP7
-U 1 1 60917D91
-P 7200 2950
-F 0 "TP7" H 7031 2955 50  0000 R CNN
-F 1 "test_point" H 7187 3084 50  0001 C CNN
-F 2 "p_Package_Misc:TP_SMD_1.25mm" H 7200 2750 50  0001 C CNN
-F 3 "" H 7200 2950 50  0001 C CNN
-	1    7200 2950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6850 3050 7100 3050
-Wire Wire Line
-	6850 2950 7100 2950
 NoConn ~ 5450 4850
 Wire Wire Line
 	6850 3750 7500 3750
@@ -727,4 +591,15 @@ Wire Wire Line
 	2150 1700 3300 1700
 Text Label 3300 1700 0    50   ~ 0
 ADC_IN16
+NoConn ~ 6850 4550
+NoConn ~ 6850 4750
+NoConn ~ 6850 4850
+NoConn ~ 5450 2750
+NoConn ~ 5450 2850
+Text Label 7500 3150 0    50   ~ 0
+UART1_TX
+NoConn ~ 6850 2950
+NoConn ~ 6850 3050
+NoConn ~ 6850 3350
+NoConn ~ 6850 3450
 $EndSCHEMATC
