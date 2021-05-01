@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# esc_brushless-rescue_Conn_HE13_1x3_2.54-p_Misc
+# esc_brushless-rescue_Conn_HE13_1x3_2.54-p_Misc-esc_brushless-rescue-esc_brushless-rescue
 #
-DEF esc_brushless-rescue_Conn_HE13_1x3_2.54-p_Misc J 0 40 Y N 1 F N
+DEF esc_brushless-rescue_Conn_HE13_1x3_2.54-p_Misc-esc_brushless-rescue-esc_brushless-rescue J 0 40 Y N 1 F N
 F0 "J" 100 200 50 H V C CNN
-F1 "esc_brushless-rescue_Conn_HE13_1x3_2.54-p_Misc" 100 -350 50 H V C CNN
+F1 "esc_brushless-rescue_Conn_HE13_1x3_2.54-p_Misc-esc_brushless-rescue-esc_brushless-rescue" 100 -350 50 H V C CNN
 F2 "p_Package_Misc:PinHeader_1x03_P2.54mm_Vertical" -100 0 50 H I C CNN
 F3 "" -100 0 50 H I C CNN
 DRAW
@@ -370,6 +370,26 @@ S -40 -100 40 100 1 1 10 N
 P 4 0 1 0 -100 -100 -100 -50 100 50 100 100 N
 X ~ 1 0 150 50 D 50 50 1 1 P
 X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# p_Passive_R_shunt_2512
+#
+DEF p_Passive_R_shunt_2512 R 0 40 Y Y 1 F N
+F0 "R" 0 0 50 H V C CNN
+F1 "p_Passive_R_shunt_2512" 0 0 50 H V C CNN
+F2 "p_Package_Resistor_SMD:R_2512_6332Metric_shunt" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -40 -100 40 100 1 1 10 N
+P 2 0 1 0 -50 -150 0 -150 N
+P 2 0 1 0 -50 150 0 150 N
+P 2 0 1 0 0 -200 0 -100 N
+P 3 0 1 0 0 200 0 100 0 150 N
+X ~ 1 0 250 50 D 50 50 1 1 P
+X ~ 2 0 -250 50 U 50 50 1 1 P
+X ~ 3 -150 150 100 R 50 50 1 1 P
+X ~ 4 -150 -150 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

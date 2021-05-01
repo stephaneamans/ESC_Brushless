@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Conn_HE13_1x3_2.54-p_Misc-esc_brushless-rescue-esc_brushless-rescue
+#
+DEF Conn_HE13_1x3_2.54-p_Misc-esc_brushless-rescue-esc_brushless-rescue J 0 40 Y N 1 F N
+F0 "J" 100 200 50 H V C CNN
+F1 "Conn_HE13_1x3_2.54-p_Misc-esc_brushless-rescue-esc_brushless-rescue" 100 -350 50 H V C CNN
+F2 "p_Package_Misc:PinHeader_1x03_P2.54mm_Vertical" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+S 0 150 200 -250 0 1 0 N
+X 1 1 -100 50 100 R 50 50 1 1 P
+X 2 2 -100 -50 100 R 50 50 1 1 P
+X 3 3 -100 -150 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

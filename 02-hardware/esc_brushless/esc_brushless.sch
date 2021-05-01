@@ -27,8 +27,8 @@ F7 "GL_B" I L 7950 2950 50
 F8 "GH_C" I L 7950 3550 50 
 F9 "SH_C" O L 7950 3650 50 
 F10 "GL_C" I L 7950 3750 50 
-F11 "ADC_C" O L 7950 5200 50 
-F12 "ADC_B" O L 7950 5300 50 
+F11 "ADC_C" O L 7950 5300 50 
+F12 "ADC_B" O L 7950 5200 50 
 F13 "ADC_A" O L 7950 5100 50 
 F14 "V_PWR" I L 7950 1650 50 
 F15 "MOTOR_PH1" O R 9400 2600 50 
@@ -127,7 +127,6 @@ F32 "SPI_SCK" O R 5450 2350 50
 F33 "\\MCU_RST" O L 3700 2500 50 
 F34 "GND" U R 5450 5550 50 
 F35 "TEMP_SENSOR1" I L 3700 4650 50 
-F36 "TEMP_SENSOR2" I L 3700 4850 50 
 $EndSheet
 $Sheet
 S 2350 1950 1050 700 
@@ -189,7 +188,7 @@ F 3 "" H 10450 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L esc_brushless-rescue:Conn_HE13_1x3_2.54-p_Misc J4
+L esc_brushless-rescue:Conn_HE13_1x3_2.54-p_Misc-esc_brushless-rescue-esc_brushless-rescue J4
 U 1 1 608FE3F3
 P 1000 3850
 F 0 "J4" H 1100 4100 50  0000 C CNN
@@ -197,17 +196,6 @@ F 1 "DNP" H 1100 3500 50  0000 C CNN
 F 2 "p_Package_Misc:PinHeader_1x03_P2.54mm_Vertical" H 900 3850 50  0001 C CNN
 F 3 "" H 900 3850 50  0001 C CNN
 	1    1000 3850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L esc_brushless-rescue:Conn_HE13_1x3_2.54-p_Misc J3
-U 1 1 6090DE8C
-P 1000 2900
-F 0 "J3" H 1100 3150 50  0000 C CNN
-F 1 "DNP" H 1100 2550 50  0000 C CNN
-F 2 "p_Package_Misc:PinHeader_1x03_P2.54mm_Vertical" H 900 2900 50  0001 C CNN
-F 3 "" H 900 2900 50  0001 C CNN
-	1    1000 2900
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -233,17 +221,6 @@ F 3 "" H 1000 850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR01
-U 1 1 60867B73
-P 1200 3200
-F 0 "#PWR01" H 1200 2950 50  0001 C CNN
-F 1 "GND" H 1205 3027 50  0000 C CNN
-F 2 "" H 1200 3200 50  0001 C CNN
-F 3 "" H 1200 3200 50  0001 C CNN
-	1    1200 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR03
 U 1 1 60867F73
 P 1300 1500
@@ -254,10 +231,6 @@ F 3 "" H 1300 1500 50  0001 C CNN
 	1    1300 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1100 3050 1200 3050
-Wire Wire Line
-	1200 3050 1200 3200
 $Comp
 L power:GND #PWR02
 U 1 1 6086C0C0
@@ -288,17 +261,6 @@ Wire Wire Line
 	1100 3800 1200 3800
 Wire Wire Line
 	1500 3800 1650 3800
-$Comp
-L p_Misc:Conn_HE13_1x2_2.54V J5
-U 1 1 608B88AD
-P 1000 6300
-F 0 "J5" H 1042 6077 50  0000 C CNN
-F 1 "Conn_HE13_1x2_2.54V" H 1228 6255 50  0001 L CNN
-F 2 "p_Package_Misc:PinHeader_1x02_P2.54mm_Vertical" H 1100 5950 50  0001 C CNN
-F 3 "" H 1000 6250 50  0001 C CNN
-	1    1000 6300
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 608C1DFA
@@ -512,10 +474,6 @@ Wire Wire Line
 	2900 6550 3500 6550
 Wire Wire Line
 	2900 6650 3600 6650
-Wire Wire Line
-	1100 6350 1650 6350
-Wire Wire Line
-	1650 6250 1100 6250
 Wire Notes Line width 12
 	1450 5600 700  5600
 Wire Notes Line width 12
@@ -540,8 +498,6 @@ Text Notes 1150 3600 0    50   ~ 0
 external +5V option
 Wire Notes Line width 12
 	700  3450 1950 3450
-Text Notes 1300 3150 0    50   ~ 0
-SWD connector
 Wire Notes Line width 12
 	1950 3450 1950 2500
 Wire Notes Line width 12
@@ -648,30 +604,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 5150 3300 6250
 $Comp
-L p_Passive:R_0603 R7
-U 1 1 60C62495
-P 5550 6550
-F 0 "R7" H 5450 6500 50  0000 C CNN
-F 1 "R_0603" H 5350 6600 50  0000 C CNN
-F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5550 6550 50  0001 C CNN
-F 3 "" H 5550 6550 50  0001 C CNN
-	1    5550 6550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 60C77DC9
-P 5550 7150
-F 0 "#PWR010" H 5550 6900 50  0001 C CNN
-F 1 "GND" H 5555 6977 50  0000 C CNN
-F 2 "" H 5550 7150 50  0001 C CNN
-F 3 "" H 5550 7150 50  0001 C CNN
-	1    5550 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 7100 5550 7150
-$Comp
 L p_Passive:R_CTN_0608 R6
 U 1 1 60C86EDB
 P 4450 6950
@@ -715,44 +647,16 @@ Wire Wire Line
 	4450 6750 4450 6700
 Text Label 4650 6750 0    50   ~ 0
 SENSOR_1
-Text Label 5750 6750 0    50   ~ 0
-SENSOR_2
-$Comp
-L p_Passive:R_CTN_0608 R8
-U 1 1 60CA5F49
-P 5550 6950
-F 0 "R8" H 5678 6996 50  0000 L CNN
-F 1 "R_CTN_0608" H 5678 6905 50  0000 L CNN
-F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5550 6950 50  0001 C CNN
-F 3 "" H 5550 6950 50  0001 C CNN
-	1    5550 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 6700 5550 6750
-Wire Wire Line
-	5750 6750 5550 6750
-Connection ~ 5550 6750
-Wire Wire Line
-	5550 6750 5550 6800
 Wire Notes Line width 12
 	4000 6100 4000 7600
 Wire Notes Line width 12
-	6250 7600 6250 6100
-Wire Notes Line width 12
-	6250 6100 4000 6100
-Wire Notes Line width 12
-	4000 7600 6250 7600
-Text Notes 4750 7500 0    50   ~ 0
+	5200 7600 5200 6100
+Text Notes 4100 7500 0    50   ~ 0
 Temperature sensors
 Wire Wire Line
 	3700 4650 3100 4650
-Wire Wire Line
-	3700 4850 3100 4850
 Text Label 3100 4650 0    50   ~ 0
 SENSOR_1
-Text Label 3100 4850 0    50   ~ 0
-SENSOR_2
 $Comp
 L power:+5V #PWR0101
 U 1 1 60DA56C0
@@ -858,17 +762,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 1750 5900 1750
 $Comp
-L power:+3.3V #PWR0110
-U 1 1 60ED6E72
-P 5550 6350
-F 0 "#PWR0110" H 5550 6200 50  0001 C CNN
-F 1 "+3.3V" H 5565 6523 50  0000 C CNN
-F 2 "" H 5550 6350 50  0001 C CNN
-F 3 "" H 5550 6350 50  0001 C CNN
-	1    5550 6350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR0111
 U 1 1 60ED8F6D
 P 4450 6350
@@ -879,8 +772,6 @@ F 3 "" H 4450 6350 50  0001 C CNN
 	1    4450 6350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 6350 5550 6400
 Wire Wire Line
 	4450 6350 4450 6400
 $Comp
@@ -894,4 +785,47 @@ F 3 "" H 2350 4150 50  0001 C CNN
 	1    2350 4150
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	1650 6250 1100 6250
+Wire Wire Line
+	1100 6350 1650 6350
+$Comp
+L p_Misc:Conn_HE13_1x2_2.54V J5
+U 1 1 608B88AD
+P 1000 6300
+F 0 "J5" H 1100 6100 50  0000 C CNN
+F 1 "Conn_HE13_1x2_2.54V" H 1228 6255 50  0001 L CNN
+F 2 "p_Package_Misc:PinHeader_1x02_P2.54mm_Vertical" H 1100 5950 50  0001 C CNN
+F 3 "" H 1000 6250 50  0001 C CNN
+	1    1000 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L p_Misc:test_point TP2
+U 1 1 60A8B33B
+P 1000 2850
+F 0 "TP2" H 800 2850 50  0000 C CNN
+F 1 "test_point" H 987 2984 50  0001 C CNN
+F 2 "p_Package_Misc:TP_SMD_1.25mm" H 1000 2650 50  0001 C CNN
+F 3 "" H 1000 2850 50  0001 C CNN
+	1    1000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L p_Misc:test_point TP3
+U 1 1 60A8E4B3
+P 1000 2950
+F 0 "TP3" H 800 2950 50  0000 C CNN
+F 1 "test_point" H 987 3084 50  0001 C CNN
+F 2 "p_Package_Misc:TP_SMD_1.25mm" H 1000 2750 50  0001 C CNN
+F 3 "" H 1000 2950 50  0001 C CNN
+	1    1000 2950
+	1    0    0    -1  
+$EndComp
+Text Notes 950  3100 0    50   ~ 0
+SWD connector
+Wire Notes Line width 12
+	5200 6100 4000 6100
+Wire Notes Line width 12
+	4000 7600 5200 7600
 $EndSCHEMATC

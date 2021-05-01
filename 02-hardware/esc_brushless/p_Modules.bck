@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NRF24L01
+F ${KI_PERSO_COMPLIB}/datasheets/p_Modules/nRF24L01.pdf
+$ENDCMP
+#
+$CMP nRF24L01
+F ${KI_PERSO_COMPLIB}/datasheets/p_Modules/nRF24L01.pdf
+$ENDCMP
+#
+#End Doc Library
