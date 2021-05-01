@@ -425,19 +425,6 @@ Wire Wire Line
 	2450 6000 4100 6000
 Wire Wire Line
 	1700 6350 4400 6350
-$Comp
-L power:GNDPWR #PWR?
-U 1 1 6057A563
-P 4150 2550
-AR Path="/603415C7/6057A563" Ref="#PWR?"  Part="1" 
-AR Path="/602453F4/6057A563" Ref="#PWR018"  Part="1" 
-F 0 "#PWR018" H 4150 2350 50  0001 C CNN
-F 1 "GNDPWR" H 4154 2396 50  0000 C CNN
-F 2 "" H 4150 2500 50  0001 C CNN
-F 3 "" H 4150 2500 50  0001 C CNN
-	1    4150 2550
-	1    0    0    -1  
-$EndComp
 Text HLabel 1700 2400 0    50   UnSpc ~ 0
 SN1
 Text HLabel 1700 2500 0    50   UnSpc ~ 0
@@ -525,35 +512,8 @@ Wire Wire Line
 	3200 1800 3200 1900
 Wire Wire Line
 	8550 1300 8550 3200
-$Comp
-L p_Passive:R_0603 R18
-U 1 1 60620400
-P 4400 2300
-F 0 "R18" V 4285 2300 50  0000 C CNN
-F 1 "R_0603" V 4284 2300 50  0001 C CNN
-F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4400 2300 50  0001 C CNN
-F 3 "" H 4400 2300 50  0001 C CNN
-	1    4400 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L p_Passive:C_0603 C1
-U 1 1 60622C1C
-P 4150 2300
-F 0 "C1" H 4000 2400 50  0000 L CNN
-F 1 "1n" H 3950 2250 50  0000 L CNN
-F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4150 2300 50  0001 C CNN
-F 3 "" H 4150 2300 50  0001 C CNN
-	1    4150 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4150 2450 4150 2500
-Wire Wire Line
-	4400 2500 4400 2450
-Wire Wire Line
-	1700 2500 4150 2500
-Connection ~ 4150 2500
+	1700 2500 3850 2500
 Wire Wire Line
 	1700 2400 3700 2400
 Wire Wire Line
@@ -565,49 +525,29 @@ Wire Wire Line
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 6066931F
-P 4150 5050
+P 4400 5050
 AR Path="/603415C7/6066931F" Ref="#PWR?"  Part="1" 
 AR Path="/602453F4/6066931F" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 4150 4850 50  0001 C CNN
-F 1 "GNDPWR" H 4154 4896 50  0000 C CNN
-F 2 "" H 4150 5000 50  0001 C CNN
-F 3 "" H 4150 5000 50  0001 C CNN
-	1    4150 5050
+F 0 "#PWR020" H 4400 4850 50  0001 C CNN
+F 1 "GNDPWR" H 4404 4896 50  0000 C CNN
+F 2 "" H 4400 5000 50  0001 C CNN
+F 3 "" H 4400 5000 50  0001 C CNN
+	1    4400 5050
 	1    0    0    -1  
-$EndComp
-$Comp
-L p_Passive:R_0603 R19
-U 1 1 60669326
-P 4400 4800
-F 0 "R19" V 4285 4800 50  0000 C CNN
-F 1 "R_0603" V 4284 4800 50  0001 C CNN
-F 2 "p_Package_Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4400 4800 50  0001 C CNN
-F 3 "" H 4400 4800 50  0001 C CNN
-	1    4400 4800
-	-1   0    0    1   
 $EndComp
 $Comp
 L p_Passive:C_0603 C2
 U 1 1 6066932C
-P 4150 4800
-F 0 "C2" H 4000 4900 50  0000 L CNN
-F 1 "1n" H 3950 4750 50  0000 L CNN
-F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4150 4800 50  0001 C CNN
-F 3 "" H 4150 4800 50  0001 C CNN
-	1    4150 4800
+P 4100 4750
+F 0 "C2" H 3950 4850 50  0000 L CNN
+F 1 "1n" H 3900 4700 50  0000 L CNN
+F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4100 4750 50  0001 C CNN
+F 3 "" H 4100 4750 50  0001 C CNN
+	1    4100 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 4950 4150 5000
-Wire Wire Line
-	4400 5000 4400 4950
-Wire Wire Line
-	1700 5000 4150 5000
-Connection ~ 4150 5000
-Wire Wire Line
 	3700 4900 3700 4600
-Wire Wire Line
-	1700 4900 3700 4900
 Wire Wire Line
 	2450 3450 4100 3450
 Wire Wire Line
@@ -630,14 +570,6 @@ F 3 "" H 3200 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 4300 3200 4400
-Wire Wire Line
-	4150 5000 4400 5000
-Wire Wire Line
-	4150 5000 4150 5050
-Wire Wire Line
-	4150 2500 4400 2500
-Wire Wire Line
-	4150 2500 4150 2550
 Text HLabel 1700 4900 0    50   UnSpc ~ 0
 SN2
 Text HLabel 1700 5000 0    50   UnSpc ~ 0
@@ -794,19 +726,6 @@ Connection ~ 5700 1800
 Connection ~ 6150 1300
 Wire Wire Line
 	6150 1300 8550 1300
-$Comp
-L power:GNDPWR #PWR?
-U 1 1 607193DC
-P 4150 2550
-AR Path="/603415C7/607193DC" Ref="#PWR?"  Part="1" 
-AR Path="/602453F4/607193DC" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 4150 2350 50  0001 C CNN
-F 1 "GNDPWR" H 4154 2396 50  0000 C CNN
-F 2 "" H 4150 2500 50  0001 C CNN
-F 3 "" H 4150 2500 50  0001 C CNN
-	1    4150 2550
-	1    0    0    -1  
-$EndComp
 Text HLabel 1700 2900 0    50   Output ~ 0
 ADC_A
 Wire Wire Line
@@ -818,7 +737,6 @@ V_PWR
 Wire Wire Line
 	4400 650  1700 650 
 Connection ~ 4400 650 
-Connection ~ 4150 2550
 Text HLabel 10000 3200 2    50   UnSpc ~ 0
 MOTOR_PH1
 Text HLabel 10000 3800 2    50   UnSpc ~ 0
@@ -847,39 +765,13 @@ Wire Wire Line
 Wire Wire Line
 	3700 2100 3700 2400
 Wire Wire Line
-	3700 2100 4150 2100
-Wire Wire Line
-	4150 2100 4150 2150
-Wire Wire Line
-	4150 2100 4400 2100
-Wire Wire Line
-	4400 2100 4400 2150
-Connection ~ 4150 2100
-Wire Wire Line
-	4400 2100 4400 1950
-Connection ~ 4400 2100
-Connection ~ 4400 1950
-Wire Wire Line
-	4400 4650 4400 4600
-Wire Wire Line
-	4400 4600 4150 4600
-Wire Wire Line
-	4150 4600 4150 4650
-Wire Wire Line
-	3700 4600 4150 4600
-Connection ~ 4150 4600
-Wire Wire Line
 	4400 4350 4400 4450
-Connection ~ 4400 4600
 Wire Wire Line
 	4400 4450 3450 4450
 Wire Wire Line
 	3450 4450 3450 4700
 Wire Wire Line
 	3450 4700 1700 4700
-Connection ~ 4400 4450
-Wire Wire Line
-	4400 4450 4400 4600
 Text HLabel 1700 2200 0    50   Output ~ 0
 SL_A
 Wire Wire Line
@@ -911,4 +803,88 @@ Wire Wire Line
 	10000 5550 9900 5550
 Wire Wire Line
 	9900 5550 9900 5650
+$Comp
+L p_Passive:R_shunt_2512 R19
+U 1 1 60B32745
+P 4400 4750
+F 0 "R19" H 4470 4750 50  0000 L CNN
+F 1 "R_shunt_2512" H 4470 4705 50  0001 L CNN
+F 2 "p_Package_Resistor_SMD:R_2512_6332Metric_shunt" H 4400 4750 50  0001 C CNN
+F 3 "" H 4400 4750 50  0001 C CNN
+	1    4400 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4600 4100 4600
+Connection ~ 4100 4600
+Wire Wire Line
+	4100 4600 4250 4600
+Wire Wire Line
+	4250 4900 4100 4900
+Wire Wire Line
+	1700 4900 3700 4900
+Connection ~ 4100 4900
+Wire Wire Line
+	1700 5000 3850 5000
+Wire Wire Line
+	3850 5000 3850 4900
+Wire Wire Line
+	3850 4900 4100 4900
+Wire Wire Line
+	4400 5000 4400 5050
+Wire Wire Line
+	4400 4500 4400 4450
+Connection ~ 4400 4450
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 60B6AA37
+P 4400 2550
+AR Path="/603415C7/60B6AA37" Ref="#PWR?"  Part="1" 
+AR Path="/602453F4/60B6AA37" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 4400 2350 50  0001 C CNN
+F 1 "GNDPWR" H 4404 2396 50  0000 C CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2500 4400 2550
+Wire Wire Line
+	4400 2000 4400 1950
+Connection ~ 4400 1950
+Wire Wire Line
+	3850 2400 3850 2500
+Wire Wire Line
+	3700 2100 4100 2100
+Wire Wire Line
+	3850 2400 4100 2400
+$Comp
+L p_Passive:R_shunt_2512 R18
+U 1 1 60B9FD3E
+P 4400 2250
+F 0 "R18" H 4470 2250 50  0000 L CNN
+F 1 "R_shunt_2512" H 4470 2205 50  0001 L CNN
+F 2 "p_Package_Resistor_SMD:R_2512_6332Metric_shunt" H 4400 2250 50  0001 C CNN
+F 3 "" H 4400 2250 50  0001 C CNN
+	1    4400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L p_Passive:C_0603 C1
+U 1 1 60BA1C5D
+P 4100 2250
+F 0 "C1" H 3950 2350 50  0000 L CNN
+F 1 "1n" H 3900 2200 50  0000 L CNN
+F 2 "p_Package_Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4100 2250 50  0001 C CNN
+F 3 "" H 4100 2250 50  0001 C CNN
+	1    4100 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 2100
+Wire Wire Line
+	4100 2100 4250 2100
+Connection ~ 4100 2400
+Wire Wire Line
+	4100 2400 4250 2400
 $EndSCHEMATC
