@@ -9,7 +9,7 @@ They can be outrunners (the stator is surrounded by the rotor), inrunners (the r
 
 The advantages of a brushless motor over brushed motors are high power-to-weight ratio, high speed, nearly instantaneous control of speed (rpm) and torque, high efficiency, and low maintenance.
 
-[Brushless motor topologies](svg_files/bldc_motor_topologies.drawio.svg)
+![Brushless motor topologies](svg_files/bldc_motor_topologies.drawio.svg)
 
 ## 1.2 - ESC brushless rrinciple
 
