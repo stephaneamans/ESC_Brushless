@@ -12,7 +12,7 @@ The advantages of a brushless motor over brushed motors are high power-to-weight
 ![Brushless motor topologies](svg_files/bldc_motor_topologies.drawio.svg)
 
 
-## 1.2 - ESC brushless rrinciple
+## 1.2 - Electronic speed controller principle
 
 Start
 The module is based around a microrontroller used to manage the communication (RF or wire) and all the inputs and outputs.
