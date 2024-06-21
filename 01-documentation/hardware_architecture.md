@@ -16,12 +16,19 @@ The different motor topologies are described in figure 1.1.
 
 ## 1.2 - Electronic speed controller principle
 
-Start
-The module is based around a microrontroller used to manage the communication (RF or wire) and all the inputs and outputs.
-![Module global diagram overview](svg_files/module_global_diagram_overview.drawio.svg)
+An electronic speed controller follows a speed reference signal (derived from a throttle lever, joystick, or other manual input) and varies the switching rate of a network of field effect transistors (FETs).
+By adjusting the duty cycle or switching frequency of the transistors, the speed of the motor is changed.
 
-The power module is used to supply needed voltage domain (3.3V), the power consumption optimizations are done by the microcontroller unit.
-End
+In a brushless motor, the speed of the motor is varied by adjusting the timing of pulses of current delivered to the several windings of the motor.
+
+Brushless ESC systems basically create three-phase AC power, like a variable frequency drive, to run brushless motors.
+
+The correct phase of the current fed to the motor varies with the motor rotation, which is to be taken into account by the ESC.
+Usually, back electro-magnetic force (EMF) from the motor windings is used to detect this rotation, but variations exist that use separate magnetic (Hall effect) sensors or optical detectors.
+Computer-programmable speed controls generally have user-specified options which allow setting low voltage cut-off limits, timing, acceleration, braking and direction of rotation.
+Reversing the motor's direction may also be accomplished by switching any two of the three leads from the ESC to the motor.
+
+The ESC principle is shown in figure 1.2.
 
 
 # 2 - Hardware architecture
