@@ -28,7 +28,12 @@ Usually, back electro-magnetic force (EMF) from the motor windings is used to de
 Computer-programmable speed controls generally have user-specified options which allow setting low voltage cut-off limits, timing, acceleration, braking and direction of rotation.
 Reversing the motor's direction may also be accomplished by switching any two of the three leads from the ESC to the motor.
 
-The ESC principle is shown in figure 1.2.
+The ESC principle is described below.
+
+The goal is to allow the current flowing through each inductor in all directions.
+To achieve this, six switchs (most often MOS FETs) are used in a H bridge topology.
+
+Let's look at four examples:
 
 ![ESC commutation principle](svg_files/esc_commutation_principle.drawio.svg)
 
