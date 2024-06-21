@@ -35,7 +35,11 @@ To achieve this, six switchs (most often MOS FETs) are used in a H bridge topolo
 
 Let's look at four examples:
 
-In figure 1.2 and 1.3 the switches positions allow the current flowing through 
+In figure 1.2 and 1.3 the switches positions allow the current flowing through L2 and L3 in one direction or the other.
+
+In figures 1.4 and 1.5, the same principle occurs with a current flowing through L1 and L2 in one direction then the other.
+
+Positionning switches like that allow to flow a current in any inductor and in any direction allowing to create corresponding magnetic field to control the motor rotation.
 
 ![ESC commutation principle](svg_files/esc_commutation_principle.drawio.svg)
 
