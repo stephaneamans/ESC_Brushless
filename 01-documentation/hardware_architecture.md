@@ -2,13 +2,14 @@
 
 ## 1.1 - Brushless motor principle
 
-Start
-The module is based around a microrontroller used to manage the communication (RF or wire) and all the inputs and outputs.
-![Module global diagram overview](svg_files/module_global_diagram_overview.drawio.svg)
+A brushless DC electric motor (BLDC) is a synchronous motor using a direct current electric power supply.
+It uses an electronic controller to switch DC currents to the motor windings producing magnetic fields that effectively rotate and which the permanent magnet rotor follows.
+The controller adjusts the phase and amplitude of the current pulses that control the speed and torque of the motor, it is an improvement on the mechanical commutator (brushes) used in many conventional electric motors.
+They can be outrunners (the stator is surrounded by the rotor), inrunners (the rotor is surrounded by the stator), or axial (the rotor and stator are flat and parallel).
 
-The power module is used to supply needed voltage domain (3.3V), the power consumption optimizations are done by the microcontroller unit.
-End
+The advantages of a brushless motor over brushed motors are high power-to-weight ratio, high speed, nearly instantaneous control of speed (rpm) and torque, high efficiency, and low maintenance.
 
+![Brushless motor topologies](svg_files/bldc_motor_topologies.drawio.svg)
 
 ## 1.2 - ESC brushless rrinciple
 
