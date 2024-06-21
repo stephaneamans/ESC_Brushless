@@ -35,6 +35,8 @@ To achieve this, six switchs (most often MOS FETs) are used in a H bridge topolo
 
 Let's look at four examples:
 
+In figure 1.2 and 1.3 the switches positions allow the current flowing through 
+
 ![ESC commutation principle](svg_files/esc_commutation_principle.drawio.svg)
 
 
