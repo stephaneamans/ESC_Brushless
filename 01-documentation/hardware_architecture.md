@@ -30,6 +30,8 @@ Reversing the motor's direction may also be accomplished by switching any two of
 
 The ESC principle is shown in figure 1.2.
 
+![ESC commutation principle](svg_files/esc_commutation_principle.drawio.svg)
+
 
 # 2 - Hardware architecture
 
