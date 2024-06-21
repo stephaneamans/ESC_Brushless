@@ -11,6 +11,7 @@ The advantages of a brushless motor over brushed motors are high power-to-weight
 
 ![Brushless motor topologies](svg_files/bldc_motor_topologies.drawio.svg)
 
+
 ## 1.2 - ESC brushless rrinciple
 
 Start
